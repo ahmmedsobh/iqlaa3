@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:converters="clr-namespace:iqlaa3"
+             xmlns:local="clr-namespace:iqlaa3"
+             mc:Ignorable="d"
+             x:Class="iqlaa3.FavoriteWebsites"
+             FlowDirection="RightToLeft">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:StringToImageSourceConverter x:Key="StringToImageSourceConverter"></converters:StringToImageSourceConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="lvWebsitesForCategory"  HasUnevenRows="True" ItemSelected="OnListViewItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Frame CornerRadius="30" 
+                                       HeightRequest="60"
+                                       WidthRequest="60"
+                                       HorizontalOptions="Center"
+                                       Padding="0"
+                                       Grid.RowSpan="2"
+                                       IsClippedToBounds="True"
+                                       Margin="7">
+                                    <Image     
+                                            Source="{Binding Imgurl, Converter={StaticResource StringToImageSourceConverter}}"
+                                            HorizontalOptions="Center" 
+                                            VerticalOptions="Center"/>
+
+                                </Frame>
+
+
+
+                                <Label Grid.Column="1"
+                           Text="{Binding Name}"
+                           FontAttributes="Bold" />
+                                <Label Grid.Row="1"
+                           Grid.Column="1"
+                           Text="{Binding Descrption}"
+                           VerticalOptions="Center" />
+
+                                <!--<Image  Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1" Source="iqlaa3.Imgs.speed.png" HeightRequest="20" WidthRequest="20"></Image>
+                                <Image  Grid.Column="1" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" Grid.Row="1" Source="iqlaa3.Imgs.favorite.png" HeightRequest="20" WidthRequest="20"></Image>-->
+                                <!--<Button Grid.Row="0" HorizontalOptions="End" Grid.Column="1" Text="add"></Button>-->
+                                <ImageButton 
+                                    
+                                    Clicked="DeleteFavorite"
+                                    Source="{local:ImageResource iqlaa3.Imgs.delete.png}" 
+                                    Grid.Row="0" 
+                                    HorizontalOptions="End" 
+                                    Grid.Column="1"  
+                                    HeightRequest="25"
+                                    WidthRequest="25"
+                                    BackgroundColor="Transparent"></ImageButton>
+
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="iqlaa3.WebsiteBrowser">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            <WebView x:Name="wvWebsite"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" ></WebView>
+            <Button Text="اضافة الى العناصر المحفوظة" VerticalOptions="End" HorizontalOptions="FillAndExpand" Clicked="savePage" BackgroundColor="LightGreen" TextColor="Green"></Button>
+            <Button Text="اغلاق" VerticalOptions="End" HorizontalOptions="FillAndExpand" Clicked="closePage" BackgroundColor="Red" TextColor="White"></Button>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

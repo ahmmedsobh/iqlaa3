@@ -1,0 +1,180 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Imgs\aa.png" />
+    <None Remove="Imgs\aawsat.png" />
+    <None Remove="Imgs\academyhsoub.jpg" />
+    <None Remove="Imgs\accuweather.jpg" />
+    <None Remove="Imgs\alarabiya.jpg" />
+    <None Remove="Imgs\aljazeera.jpg" />
+    <None Remove="Imgs\amazon.png" />
+    <None Remove="Imgs\arabicrt.png" />
+    <None Remove="Imgs\bbc.jpg" />
+    <None Remove="Imgs\blink.jpg" />
+    <None Remove="Imgs\byte.png" />
+    <None Remove="Imgs\cnn.png" />
+    <None Remove="Imgs\coursat.jpg" />
+    <None Remove="Imgs\delete.png" />
+    <None Remove="Imgs\Doroob.png" />
+    <None Remove="Imgs\edlal.png" />
+    <None Remove="Imgs\edraak.png" />
+    <None Remove="Imgs\favorite.png" />
+    <None Remove="Imgs\free4arab.png" />
+    <None Remove="Imgs\google.png" />
+    <None Remove="Imgs\googlenews.jpg" />
+    <None Remove="Imgs\harabeee.png" />
+    <None Remove="Imgs\images.jpg" />
+    <None Remove="Imgs\insta.png" />
+    <None Remove="Imgs\jobs.png" />
+    <None Remove="Imgs\jumia.png" />
+    <None Remove="Imgs\khanacademy.png" />
+    <None Remove="Imgs\learn.png" />
+    <None Remove="Imgs\left.png" />
+    <None Remove="Imgs\logo.png" />
+    <None Remove="Imgs\maharah.png" />
+    <None Remove="Imgs\maharatech.png" />
+    <None Remove="Imgs\mawdoo3.png" />
+    <None Remove="Imgs\media.png" />
+    <None Remove="Imgs\msn.png" />
+    <None Remove="Imgs\nadrus.jpg" />
+    <None Remove="Imgs\nafham.jpg" />
+    <None Remove="Imgs\namshi.png" />
+    <None Remove="Imgs\news.png" />
+    <None Remove="Imgs\nisnass.jpg" />
+    <None Remove="Imgs\noon.png" />
+    <None Remove="Imgs\olx.png" />
+    <None Remove="Imgs\opensooq.jpg" />
+    <None Remove="Imgs\post.jpg" />
+    <None Remove="Imgs\ques.png" />
+    <None Remove="Imgs\rwaq.png" />
+    <None Remove="Imgs\sdeem.png" />
+    <None Remove="Imgs\services.png" />
+    <None Remove="Imgs\shamsunalarabia.jpg" />
+    <None Remove="Imgs\shoping.png" />
+    <None Remove="Imgs\souq.jpg" />
+    <None Remove="Imgs\speed.png" />
+    <None Remove="Imgs\tahriracademy.jpg" />
+    <None Remove="Imgs\tamkeen.jpg" />
+    <None Remove="Imgs\teracourses.png" />
+    <None Remove="Imgs\tiwtter.jpg" />
+    <None Remove="Imgs\udemy.jpg" />
+    <None Remove="Imgs\wazaf.jpg" />
+    <None Remove="Imgs\whats.png" />
+    <None Remove="Imgs\wikipedia.png" />
+    <None Remove="Imgs\yaoota.jpg" />
+    <None Remove="Imgs\youtupe.jpg" />
+    <None Remove="Imgs\zadi.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Imgs\aa.png" />
+    <EmbeddedResource Include="Imgs\aawsat.png" />
+    <EmbeddedResource Include="Imgs\academyhsoub.jpg" />
+    <EmbeddedResource Include="Imgs\accuweather.jpg" />
+    <EmbeddedResource Include="Imgs\alarabiya.jpg" />
+    <EmbeddedResource Include="Imgs\aljazeera.jpg" />
+    <EmbeddedResource Include="Imgs\amazon.png" />
+    <EmbeddedResource Include="Imgs\arabicrt.png" />
+    <EmbeddedResource Include="Imgs\bbc.jpg" />
+    <EmbeddedResource Include="Imgs\blink.jpg" />
+    <EmbeddedResource Include="Imgs\byte.png" />
+    <EmbeddedResource Include="Imgs\cnn.png" />
+    <EmbeddedResource Include="Imgs\coursat.jpg" />
+    <EmbeddedResource Include="Imgs\delete.png" />
+    <EmbeddedResource Include="Imgs\Doroob.png" />
+    <EmbeddedResource Include="Imgs\edlal.png" />
+    <EmbeddedResource Include="Imgs\edraak.png" />
+    <EmbeddedResource Include="Imgs\favorite.png" />
+    <EmbeddedResource Include="Imgs\free4arab.png" />
+    <EmbeddedResource Include="Imgs\google.png" />
+    <EmbeddedResource Include="Imgs\googlenews.jpg" />
+    <EmbeddedResource Include="Imgs\harabeee.png" />
+    <EmbeddedResource Include="Imgs\images.jpg" />
+    <EmbeddedResource Include="Imgs\insta.png" />
+    <EmbeddedResource Include="Imgs\jobs.png" />
+    <EmbeddedResource Include="Imgs\jumia.png" />
+    <EmbeddedResource Include="Imgs\khanacademy.png" />
+    <EmbeddedResource Include="Imgs\learn.png" />
+    <EmbeddedResource Include="Imgs\left.png" />
+    <EmbeddedResource Include="Imgs\logo.png" />
+    <EmbeddedResource Include="Imgs\maharah.png" />
+    <EmbeddedResource Include="Imgs\maharatech.png" />
+    <EmbeddedResource Include="Imgs\mawdoo3.png" />
+    <EmbeddedResource Include="Imgs\media.png" />
+    <EmbeddedResource Include="Imgs\msn.png" />
+    <EmbeddedResource Include="Imgs\nadrus.jpg" />
+    <EmbeddedResource Include="Imgs\nafham.jpg" />
+    <EmbeddedResource Include="Imgs\namshi.png" />
+    <EmbeddedResource Include="Imgs\news.png" />
+    <EmbeddedResource Include="Imgs\nisnass.jpg" />
+    <EmbeddedResource Include="Imgs\noon.png" />
+    <EmbeddedResource Include="Imgs\olx.png" />
+    <EmbeddedResource Include="Imgs\opensooq.jpg" />
+    <EmbeddedResource Include="Imgs\post.jpg" />
+    <EmbeddedResource Include="Imgs\ques.png" />
+    <EmbeddedResource Include="Imgs\rwaq.png" />
+    <EmbeddedResource Include="Imgs\sdeem.png" />
+    <EmbeddedResource Include="Imgs\services.png" />
+    <EmbeddedResource Include="Imgs\shamsunalarabia.jpg" />
+    <EmbeddedResource Include="Imgs\shoping.png" />
+    <EmbeddedResource Include="Imgs\souq.jpg" />
+    <EmbeddedResource Include="Imgs\speed.png" />
+    <EmbeddedResource Include="Imgs\tahriracademy.jpg" />
+    <EmbeddedResource Include="Imgs\tamkeen.jpg" />
+    <EmbeddedResource Include="Imgs\teracourses.png" />
+    <EmbeddedResource Include="Imgs\tiwtter.jpg" />
+    <EmbeddedResource Include="Imgs\udemy.jpg" />
+    <EmbeddedResource Include="Imgs\wazaf.jpg" />
+    <EmbeddedResource Include="Imgs\whats.png" />
+    <EmbeddedResource Include="Imgs\wikipedia.png" />
+    <EmbeddedResource Include="Imgs\yaoota.jpg" />
+    <EmbeddedResource Include="Imgs\youtupe.jpg" />
+    <EmbeddedResource Include="Imgs\zadi.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AllWebsites.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AllWebsitesForCategory.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Favorite.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FavoriteWebsites.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Open.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Saved.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SaveWebsite.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="WebsiteBrowser.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
